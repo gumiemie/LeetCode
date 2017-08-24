@@ -1,0 +1,16 @@
+# Filter IDEA project files
+*.ipr
+*.iws
+*.iml
+*.ids
+/.idea
+.idea/*
+
+# Filter maven target directories
+
+target/
+
+# Filter eclipse project files
+.settings/
+.classpath
+.project
