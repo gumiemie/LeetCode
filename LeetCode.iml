@@ -10,6 +10,7 @@
       <sourceFolder url="file://$MODULE_DIR$/src/main/java/002-AddTwoNumbers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/001-Two Sum" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/002-AddTwoNumbers" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/003-Longest Substring Without Repeating Characters" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
