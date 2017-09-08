@@ -11,7 +11,8 @@
       <sourceFolder url="file://$MODULE_DIR$/001-Two Sum" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/002-Add Two Numbers" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/003-Longest Substring Without Repeating Characters" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/4-Median of Two Sorted Arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/004-Median of Two Sorted Arrays" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/005-Longest Palindromic Substring" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
