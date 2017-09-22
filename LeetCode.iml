@@ -13,7 +13,8 @@
       <sourceFolder url="file://$MODULE_DIR$/003-Longest Substring Without Repeating Characters" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/004-Median of Two Sorted Arrays" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/005-Longest Palindromic Substring" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/6. ZigZag Conversion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/006-ZigZag Conversion" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/007-Reverse Integer" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
