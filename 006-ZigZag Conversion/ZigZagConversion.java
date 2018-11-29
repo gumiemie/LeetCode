@@ -2,13 +2,13 @@ import org.junit.Test;
 
 /**
  * @author 顾洋 <guyang@ebnew.com>
- * @description 将字符串转换成锯齿状, 并返回每行的
+ * @description 将字符串转换成Z字状, 并逐行输出
  * @date 2017/9/21 10:16$
  */
 public class ZigZagConversion {
 
     public String convert(String s, int numRows) {
-        if (numRows<=1) return s;
+        if (numRows <= 1) return s;
         //用数组存储每一行的字符.
         String[] result = new String[numRows];
         String[] bytes = s.split("");
@@ -29,8 +29,8 @@ public class ZigZagConversion {
             }
         }
         String resultString = "";
-        for (String temp:result){
-            resultString+=temp;
+        for (String temp : result) {
+            resultString += temp;
         }
         //去掉null
         resultString = resultString.replaceAll("null", "");
@@ -38,9 +38,47 @@ public class ZigZagConversion {
     }
 
     @Test
-    public void execute(){
-        String paypalishiring = convert("PAYPALISHIRING", 3);
+    public void execute() {
+        String paypalishiring = process("LEETCODEISHIRING", 3);
         System.out.print(paypalishiring);
     }
+
+    /**
+     * 优化版
+     *
+     * @return
+     */
+    private String process(String s, int numRows) {
+        if (s.length() <= 2 || numRows == 1 || s.length() <= numRows) return s;
+        StringBuilder[] stringBuilders = new StringBuilder[numRows];
+        //数组索引
+        int i = 0;
+        int max = numRows - 1;
+        //方向开关
+        boolean flag = true;
+        for (char c : s.toCharArray()) {
+            if (stringBuilders[i] == null) {
+                stringBuilders[i] = new StringBuilder();
+            }
+            stringBuilders[i].append(c);
+            if (flag) {
+                i++;
+                if (i == max) flag = false;
+            } else {
+                i--;
+                if (i == 0) flag = true;
+            }
+        }
+
+        StringBuilder result = stringBuilders[0];
+        i = 1;
+        while (i < numRows) {
+            result.append(stringBuilders[i]);
+            i++;
+        }
+
+        return result.toString();
+    }
+
 
 }

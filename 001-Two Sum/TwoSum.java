@@ -1,5 +1,7 @@
 import org.junit.Test;
 
+import java.util.HashMap;
+
 /**
  * @author 顾洋 <guyang@ebnew.com>
  * @description Given an array of integers, return indices of the two numbers such that they add up to a specific target.
@@ -9,17 +11,17 @@ import org.junit.Test;
 public class TwoSum {
 
     @Test
-    public void test(){
+    public void test() {
         //[3,2,4] 6
-        int[] array = new int[]{3,2,4};
+        int[] array = new int[]{3, 2, 4};
         int target = 6;
 
-        int[] ints = twoSum(array, target);
-        System.out.print("["+ints[0]+","+ints[1]+"]");
+        int[] ints = twoSumUseHashMap(array, target);
+        System.out.print("[" + ints[0] + "," + ints[1] + "]");
     }
 
     //解决思路是两个for循环.
-    public int[] twoSum(int[] nums, int target) {
+    private int[] twoSum(int[] nums, int target) {
         int[] result = new int[2];
         for (int i = 0; i < nums.length; i++) {
             for (int j = i + 1; j < nums.length; j++) {
@@ -31,6 +33,28 @@ public class TwoSum {
             }
         }
         return result;
+    }
+
+    /**
+     * 解决思路是使用hash表
+     *
+     * @param nums
+     * @param target
+     * @return
+     */
+    private int[] twoSumUseHashMap(int[] nums, int target) {
+        if (nums.length == 0) {
+            throw new IllegalArgumentException("参数数组为空!");
+        }
+        HashMap<Integer, Integer> map = new HashMap<Integer, Integer>();
+        for (int i = 0; i < nums.length; i++) {
+            int num = nums[i];
+            if (map.containsKey(target - num)) {
+                return new int[]{map.get(target - num), i};
+            }
+            map.put(num, i);
+        }
+        return null;
     }
 
 }
