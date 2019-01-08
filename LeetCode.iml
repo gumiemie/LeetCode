@@ -17,6 +17,18 @@
       <sourceFolder url="file://$MODULE_DIR$/007-Reverse Integer" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/008-StringtoInteger" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/009-PalindromeNumber" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/010-Regular Expression Matching" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/011-Container With Most Water" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/012-Integer To Roman" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/013-Roman To Integer" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/014-Longest Common Prefix" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/015-3sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/016-Three Sum Closest" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/017-Letter Combinations Of A Phone Number" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/018-4sum" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/019-Remove Nth Node From End Of List" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/000-common" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/020-Valid Parentheses" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />

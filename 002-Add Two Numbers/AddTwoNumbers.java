@@ -39,12 +39,3 @@ public class AddTwoNumbers {
         return headNode;
     }
 }
-
-class ListNode {
-    int val;
-    ListNode next;
-
-    ListNode(int x) {
-        val = x;
-    }
-}

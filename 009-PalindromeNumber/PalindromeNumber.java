@@ -7,33 +7,46 @@ import org.junit.Test;
  */
 public class PalindromeNumber {
 
+    /**
+     * 使用数字计算将数字反转后对比
+     * @param x
+     * @return
+     */
     public boolean isPalindrome(int x) {
         //所有负数都不是回文数.
         if (x < 0) return false;
-        //所有单数都是回文数.
+        //所有个位数都是回文数.
         if (x < 10) return true;
         //10的整数倍都不是回文数.
         if (x % 10 == 0) return false;
         int j = x;
-        double temp = 0;
         int k = 0;
-        while (x != 0) {
-            temp += (x % 10) * Math.pow(10, k);
-            x /= 10;
-            k--;
+        while (j != 0) {
+            k = k * 10 + j % 10;
+            j /= 10;
         }
-        k = (int) (temp * Math.pow(10, 0 - k));
-        if (j == k) return true;
-        return false;
+        return x == k;
     }
 
     @Test
     public void execute() {
-        if (isPalindrome(1)) {
+        if (impl2(121)) {
             System.out.print("true");
         } else {
             System.out.print("false");
         }
+    }
+
+    /**
+     * 利用String类反转后对比
+     * @param x
+     * @return
+     */
+    public boolean impl2(int x) {
+
+        StringBuilder sb = new StringBuilder();
+        sb.append(x);
+        return sb.reverse().toString().equals(sb.toString());
     }
 
 }
