@@ -29,6 +29,9 @@
       <sourceFolder url="file://$MODULE_DIR$/019-Remove Nth Node From End Of List" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/000-common" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/020-Valid Parentheses" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/021-Merge Two Sorted Lists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/022-Generate Parentheses" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/023-Merge K Sorted Lists" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
