@@ -32,6 +32,12 @@
       <sourceFolder url="file://$MODULE_DIR$/021-Merge Two Sorted Lists" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/022-Generate Parentheses" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/023-Merge K Sorted Lists" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/024-Swap Nodes In Pairs" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/025-Reverse Nodes In K Group" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/026-Remove Duplicates From Sorted Array" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/027-Remove Element" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/028 - Implement Strstr" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/029-Divide Two Integers" isTestSource="false" />
       <excludeFolder url="file://$MODULE_DIR$/target" />
     </content>
     <orderEntry type="inheritedJdk" />
