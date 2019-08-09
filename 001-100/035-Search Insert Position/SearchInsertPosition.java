@@ -27,6 +27,7 @@ public class SearchInsertPosition {
 
     /**
      * 二分查找
+     * 中间索引值 使用si + (ei - si) >> 1 以避免值溢出
      * @param nums
      * @param target
      * @return
@@ -34,7 +35,7 @@ public class SearchInsertPosition {
     public int searchInsert(int[] nums, int target) {
         int si = 0, ei = nums.length - 1, hi;
         while (si <= ei) {
-            hi = (si + ei) >> 1;
+            hi = si + (ei - si) >> 1;
             if (nums[hi] == target) {
                 return hi;
             } else {
